@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Segoe UI;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation */
+
+#navigation {
+    width: 1200px;
+    height: 74px;
+    margin: 37px auto;
+    padding: 0 17.5px;
+    display: flex;
+}
+
+#navigation a {
+    padding: 22px 48px;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    flex-basis: 20%;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+#navigation a.logo {
+    background-image: url("https://rocketman.learnwagtail.com/static/images/logo.24c25970fb09.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-basis: 45%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+#navigation a.wagtail-course {
+    padding-right: 0;
+}
+
+/* Hero */
+
+#hero {
+    height: 740px;
+    background-image: linear-gradient(180deg,
+                        rgba(0 , 0, 0, 0.3) 0%,
+                        rgba(0, 0, 0, 0.8) 100%),                  
+                        url("https://rocketman.learnwagtail.com/media/images/spacex-OHOU-5UVIYQ-unsplash.2e16d0ba.fill-1600x800.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#hero div.hero-text-box {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 17.5px;
+    padding-top: 160px;
+}
+
+#hero div.hero-text-box div.hero-text {
+    width: 70%;
+    font-size: 30px;
+    color: white;
+}
+
+#hero div.hero-text-box div.hero-text a {
+    padding: 12px 32px;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+}
+
+#hero::before {
+    display: inline-block;
+    content: " ";
+    background-image: url("https://ethereumworldnews.com/wp-content/uploads/2018/10/maxresdefault-1-1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 110px;
+    height: 200px;
+    position: absolute;
+    left: 41%;
+    opacity: 0.7;
+}
+
+/* Content */
+
+#content {
+    width: 1200px;
+    margin: 104px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content div {
+    /* border: 1px dashed blue; */
+    padding: 0 17.5px;
+}
+
+#content div.title {
+    margin-bottom: 104px;
+    flex-basis: 100%;
+}
+
+#content div.title h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#content div.image-1, div.image-2 {
+    flex-basis: 50%;
+}
+
+#content div.image-1 img, div.image-2 img {
+    width: 563px;
+}
+
+#content div.image-text-part-1 {
+    margin-bottom: 72px;
+    padding: 48px;
+    font-size: 21px;
+    text-align: center;
+}
+
+#content div.image-text-part-1 h5 {
+    margin-top: 0;
+    font-size: 23px;
+}
+
+#content div.image-text-part-1 a {
+    font-size: 16px;
+}
+
+#content div.image {
+    margin-bottom: 72px;
+    height: 632px;
+    flex-basis: 100%;
+    position: relative;
+}
+
+#content div.image img {
+    width: 757px;
+}
+
+#content div.image div.image-text-part-2 {
+    width: 489px;
+    padding: 50px;
+    font-size: 21px;
+    color: white;
+    background-color: #212529;
+    position: absolute; 
+    right: 80px;
+    bottom: 35px;
+    display: inline-block;
+}
+
+#content div.image div.image-text-part-2 h3 {
+    margin-top: 0;
+    font-size: 34px;
+}
+
+#content div.image div.image-text-part-2 a {
+    padding: 8px 48px;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+}
+
+#content div.image img.middle {
+    float: right;
+}
+
+#content div.image div.image-text-part-2.middle {   
+    left: 80px;
+}
+
+#content div.title a {
+    margin-top: 20px;
+    padding: 8px 48px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    background-color: #6e3da9;
+    display: inline-block;
+    position: relative;
+    left: 475px;
+}
+
+#content .slogan {
+    padding: 0 218px;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+#content .slogan h3{
+    font-size: 30px;
+    font-style: italic;
+}
+
+#content .slogan p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Section */
+
+#section {
+    height: 309px;
+    padding: 72px 0;
+    background-color: #814EBF;
+}
+
+#inside-section {
+    width: 1200px;
+    margin: 0 auto; 
+    display: flex;
+}
+
+#inside-section div {
+    padding-left: 17.5px;
+}
+
+#inside-section .left {
+    font-size: 24px;
+    color: white;
+    flex-basis: 82%;
+}
+
+#inside-section .left h2 {
+    margin-top: 0;
+}
+
+#inside-section .right {
+    flex-basis: 40%;
+    position: relative;
+}
+
+#inside-section .right a{
+    padding: 8px 32px;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+/* Footer */
+
+#footer {
+    height: 292px;
+    padding: 72px 0;
+    background-color: black;
+}
+
+#container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 17.5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 72px;
+    grid-row-gap: 15px;
+
+    color: white;
+}
+
+#container .footer-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #858585;
+}
+
+#container .link a {
+    font-size: 22px;
+    color: white;
+    display: block;
+}
+
+#container div p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+
+#container div a {
+    font-size: 16px;
+    color: white;
+}
+
+#container div .copyright {
+    font-size: 14px;
+    color: #858585;
+}
+           
